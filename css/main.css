@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.8em;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.headerBTN {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 1.1em 1.5em;
+  margin: 6px;
+  line-height: 1;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.headerBTN:hover {
+  color: #b61984;
+  -webkit-box-shadow: 0 0 0 1px #b61984 inset;
+          box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+.cardInfo {
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.cardInfo .card-body span:first-of-type {
+  font-size: 0.75rem;
+  color: #b61984;
+  font-weight: 600;
+}
+
+.cardInfo .card-body span:last-of-type {
+  font-size: 1.55rem;
+  color: #181818;
+  font-weight: 700;
+}
+
+.cardInfo .card__img {
+  overflow: hidden;
+}
+
+.cardInfo .card-img-top {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition: 650ms ease-in-out,-webkit-filter 650ms ease-in-out;
+  transition: 650ms ease-in-out,-webkit-filter 650ms ease-in-out;
+  transition: 650ms ease-in-out,filter 650ms ease-in-out;
+  transition: 650ms ease-in-out,filter 650ms ease-in-out,-webkit-filter 650ms ease-in-out;
+}
+
+.cardInfo .card-img-top:hover {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.cardInfo:hover {
+  -webkit-box-shadow: 0 30px 30px -10px #00000033;
+          box-shadow: 0 30px 30px -10px #00000033;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+header .topBarMenu {
+  margin-left: 20px;
+}
+
+header .topBarMenu a {
+  display: block;
+  color: #181818;
+  margin-left: 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .topBarMenu a:hover {
+  color: #b61984;
+  text-decoration: none;
+}
+
+header .nav-item {
+  padding-right: 25px;
+}
+
+header .nav-item .nav-link {
+  font-size: 13px;
+  color: #181818;
+  font-weight: 600;
+  position: relative;
+  line-height: 80px;
+}
+
+header .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+header .nav-item .nav-link:hover {
+  color: #b61984;
+}
+
+header .nav-item .nav-link:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .active .nav-link::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+header .active .nav-link:hover::after {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.tublaCarosel {
+  padding-top: 4em;
+}
+
+.tublaCarosel .tublaCarosel__bg img:first-of-type {
+  position: absolute;
+  top: 0;
+}
+
+.tublaCarosel .tublaCarosel__content span:first-of-type {
+  font-size: 1.1rem;
+  color: #b61984;
+  font-weight: 600;
+}
+
+.tublaCarosel .tublaCarosel__content span:last-of-type {
+  font-size: 3.8rem;
+  color: #181818;
+  font-weight: 700;
+}
+
+.infoStaff {
+  background-color: #dcd1f3;
+  position: relative;
+}
+
+.infoStaff .infoStaff__content {
+  position: relative;
+  z-index: 3;
+}
+
+.infoStaff .infoStaff__item {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.infoStaff .infoStaff__imgbot {
+  position: absolute;
+  bottom: 0;
+}
+
+.formYourCourse {
+  padding-top: 4em;
+}
+
+.formYourCourse .formYourCourse__content {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 30px 30px -10px #00000033;
+          box-shadow: 0 30px 30px -10px #00000033;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

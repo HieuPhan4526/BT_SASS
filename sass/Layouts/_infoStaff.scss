@@ -1,0 +1,16 @@
+.infoStaff{
+    background-color: $bg-1;
+    position: relative;
+    .infoStaff__content{
+        position: relative;
+        z-index: 3;
+    }
+    .infoStaff__item{
+        width: 100%;
+        margin: $pd-4 0;
+    }
+    .infoStaff__imgbot{
+        position: absolute;
+        bottom: 0;
+    }
+}

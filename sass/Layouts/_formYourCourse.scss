@@ -1,0 +1,9 @@
+.formYourCourse{
+    padding-top: $pd-5;
+    .formYourCourse__content{
+        @include styleContent($bg-2, 0, $pd-6);
+        width: 100%;
+        
+
+    }
+}

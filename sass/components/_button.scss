@@ -1,0 +1,10 @@
+.headerBTN{
+    @include styleText($fs-3,$color-white-1,$fw-3);
+    @include styleButton($pd-2,$pd-3,$mg-1,$lh-2,$box-s-1);
+    transition: all 300ms;
+    &:hover{
+        color: $color-pink-1;
+        box-shadow: $box-s-2
+    }
+
+}

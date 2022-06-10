@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabula</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Font GG : Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font GG : Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font anwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/crest.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                </ul>
+
+                <div class="topBarMenu d-flex align-items-center">
+                    <button class="btn headerBTN">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(+1) 555 234-8765</span>
+                    </button>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="tublaCarosel">
+        <div class="container d-flex">
+            <div class="tublaCarosel__content d-flex justify-content-center flex-column">
+                <h1 class="d-flex flex-column">
+                    <span>ABOUT US</span>
+                    <span>The language teaching experts</span>
+                </h1>
+            </div>
+            <div class="tublaCarosel__img">
+                <img class="img-fluid" src="./img/hero_team.png" alt="">
+            </div>
+        </div>
+        <div class="tublaCarosel__bg">
+            <img class="img-fluid" src="./img/yellow_top_wave_01.png" alt="">
+            <img class="img-fluid" src="./img/Violet_top_left_wave.png" alt="">
+        </div>
+    </section>
+    <section class="infoStaff">
+        <div class="infoStaff__content container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+                                <img src="./img/teacher_1.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>ITALIAN</span>
+                                    <span>July Roberts</span>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_2.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>FRENCH </span>
+                                    <span>Jon Stone</span>
+                                </h5>
+                                <p class="card-text">Nanotechnology immersion along the information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_3.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>JAPANESE</span>
+                                    <span>Emma Stone</span>
+                                </h5>
+                                <p class="card-text">
+                                    Bring to the table win-win survival strategies to ensure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_4.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>CHINESE</span>
+                                    <span>Mark Lee</span>
+                                </h5>
+                                <p class="card-text">
+                                    Proactive domination. At the end of the day, going forward.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_5.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>RUSSIAN</span>
+                                    <span>John Doe</span>
+                                </h5>
+                                <p class="card-text">
+                                    A new normal that has evolved from generation X.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_6.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>SWEDEN</span>
+                                    <span>Jane Smith</span>
+                                </h5>
+                                <p class="card-text">
+                                    Heading towards a streamlined cloud solution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_7.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>SPANISH</span>
+                                    <span>Hanna Alverez</span>
+                                </h5>
+                                <p class="card-text">
+                                    Content in real-time will have multiple touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="infoStaff__item">
+                        <div class="card cardInfo">
+                            <div class="card__img">
+
+                                <img src="./img/teacher_8.jpg" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-flex flex-column">
+                                    <span>ITALIAN</span>
+                                    <span>July Roberts</span>
+                                </h5>
+                                <p class="card-text">
+                                    Capitalize on low hanging fruit to identify a ballpark.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infoStaff__imgbot">
+            <img class="img-fluid" src="./img/Wave_White_bottom_right_shape_01.png" alt="">
+        </div>
+
+
+    </section>
+    <section class="formYourCourse">
+        <div class="container">
+            <div class="row flex-column_gap 20">
+                <div class="col-xl-7">
+                    <img class="img-fluid" src="./img/conatct_inner.png" alt="">
+                </div>
+                <div class="col-xl-5">
+                    <div class="formYourCourse__content">
+                        <h4>
+                            Find Your Course
+                        </h4>
+                        <form>
+                            <div class="form-group">
+                                <div class="form__name">
+                                    <input type="text" class="form-control" id="" placeholder="name">
+                                    <span></span>
+                                </div>
+
+                                <div class="form__Email">
+                                    <input type="email" class="form-control" id="" placeholder="Email">
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select custom-select-lg mb-3">
+                                    <option selected>English</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                    <option>German</option>
+                                </select>
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+
+
+
+
+
+
+
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

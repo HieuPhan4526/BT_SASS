@@ -1,0 +1,22 @@
+@mixin styleText($fs,$color,$fw) {
+    font-size: $fs;
+    color: $color;
+    font-weight: $fw;
+    
+}
+
+@mixin styleButton($py,$px,$mg,$lh,$box-s) {
+    padding: $py $px;
+    margin: $mg;
+    line-height: $lh;
+    box-shadow: $box-s;
+    text-align: center;
+    border-radius: 50px;
+}
+@mixin styleContent ($bg,$py,$px){
+    background: $bg;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: $py $px;
+    
+}

@@ -1,0 +1,19 @@
+
+.tublaCarosel{
+    padding-top: $pd-5;
+    .tublaCarosel__bg{
+        img:first-of-type{
+            position: absolute;
+            top: 0;
+        }
+    }
+    .tublaCarosel__content{
+        span:first-of-type{
+            @include styleText($fs-5,$color-pink-1,$fw-4);
+        }
+        span:last-of-type{
+            @include styleText($fs-6,$color-black-1,$fw-5)
+        }
+    }
+}
+
