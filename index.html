@@ -260,38 +260,48 @@
                 <div class="col-xl-7">
                     <img class="img-fluid" src="./img/conatct_inner.png" alt="">
                 </div>
-                <div class="col-xl-5">
-                    <div class="formYourCourse__content">
-                        <h4>
-                            Find Your Course
-                        </h4>
-                        <form>
-                            <div class="form-group">
-                                <div class="form__name">
-                                    <input type="text" class="form-control" id="" placeholder="name">
-                                    <span></span>
-                                </div>
-
-                                <div class="form__Email">
-                                    <input type="email" class="form-control" id="" placeholder="Email">
-                                    <span></span>
-
-                                </div>
+                <div class="col-xl-5 formYourCourse__content">
+                    <h4>
+                        Find Your Course
+                    </h4>
+                    <form>
+                        <div class="form-group d-flex justify-content-between">
+                            <div class="form__content">
+                                <span class="icon__name">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <span>
+                                    <input type="text" class="styleForm" placeholder="name">
+                                    <!-- <span>The field is required.</span>  -->
+                                </span>
 
                             </div>
-                            <div class="form-group">
-                                <select class="custom-select custom-select-lg mb-3">
-                                    <option selected>English</option>
-                                    <option>French</option>
-                                    <option>Spanish</option>
-                                    <option>German</option>
-                                </select>
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div class="form__content">
+                                <span class="icone__Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="email" class="styleForm" placeholder="Email">
+                                <span></span>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
+
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select custom-select-lg mb-3">
+                                <option selected>English</option>
+                                <option>French</option>
+                                <option>Spanish</option>
+                                <option>German</option>
+                            </select>
+                            <div class="form__content">
+                                <span class="icone_message">
+                                    <i class="fa-solid fa-message"></i>
+                                </span>
+                                <textarea class="styleMessage" name="your-message" cols="30" rows="10"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
 
 

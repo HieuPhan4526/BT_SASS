@@ -2,8 +2,31 @@
     padding-top: $pd-5;
     .formYourCourse__content{
         @include styleContent($bg-2, 0, $pd-6);
+        box-shadow: $box-s-3;
         width: 100%;
-        
-
+    }
+    h4{
+        @include styleText($fs-9,$color-black-1,$fw-5);
+        margin: $mg-5 0;
+        text-align: center;
+    }
+    .styleForm{
+        @include styleForm($hg-1,$fs-10,$bor-r-1);
+    }
+    .styleMessage{
+        @include styleForm($hg-2,$fs-10,$bor-r-2);
+        width: 100%;
+    }
+    .form__content{
+        position: relative;
+    }
+    .icon__name,
+    .icone__Email,
+    .icone_message{
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        line-height: $lh-2;
+        color: $color-pink-1;
     }
 }

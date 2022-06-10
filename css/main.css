@@ -161,7 +161,7 @@ header .active .nav-link:hover::after {
 }
 
 .tublaCarosel {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .tublaCarosel .tublaCarosel__bg img:first-of-type {
@@ -202,17 +202,53 @@ header .active .nav-link:hover::after {
 }
 
 .formYourCourse {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 .formYourCourse .formYourCourse__content {
-  background-color: white;
+  background: white;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-box-shadow: 0 30px 30px -10px #00000033;
-          box-shadow: 0 30px 30px -10px #00000033;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 25px;
   width: 100%;
+}
+
+.formYourCourse h4 {
+  font-size: 2.5rem;
+  color: #181818;
+  font-weight: 700;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.formYourCourse .styleForm {
+  padding: 1.1em 1.1em 1.1em 3.5em;
+  height: 3.7em;
+  font-size: 0.8em;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.formYourCourse .styleMessage {
+  padding: 1.1em 1.1em 1.1em 3.5em;
+  height: 90px;
+  font-size: 0.8em;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.formYourCourse .form__content {
+  position: relative;
+}
+
+.formYourCourse .icon__name,
+.formYourCourse .icone__Email,
+.formYourCourse .icone_message {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  line-height: 1;
+  color: #b61984;
 }
 /*# sourceMappingURL=main.css.map */
