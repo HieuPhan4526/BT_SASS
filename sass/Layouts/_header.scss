@@ -6,6 +6,10 @@ header{
         margin-left: $mg-4;
         @include styleIcon($color-black-1,$color-pink-1);
         margin-left: $mg-3;
+        a{
+            @include styleIcon($color-black-1,$color-pink-1);
+            margin-left: $mg-3;
+        }
     }
     .nav-item{
         padding-right: $pd-6;

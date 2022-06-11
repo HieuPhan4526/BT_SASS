@@ -109,6 +109,19 @@ header .topBarMenu:hover {
   text-decoration: none;
 }
 
+header .topBarMenu a {
+  display: block;
+  color: #181818;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-left: 1em;
+}
+
+header .topBarMenu a:hover {
+  color: #b61984;
+  text-decoration: none;
+}
+
 header .nav-item {
   padding-right: 25px;
 }
@@ -282,7 +295,7 @@ header .active .nav-link:hover::after {
 }
 
 footer {
-  background-image: url(../../img/footer_background.jpg);
+  background-image: url(../img/footer_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
