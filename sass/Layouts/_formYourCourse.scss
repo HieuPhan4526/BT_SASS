@@ -1,5 +1,9 @@
 .formYourCourse{
-    padding-top: $pd-5;
+    padding: $pd-1 0;
+    position: relative;
+    .BTN-Button{
+        padding: $pd-3 $pd-1;
+    }
     .formYourCourse__content{
         @include styleContent($bg-2, 0, $pd-6);
         box-shadow: $box-s-3;
@@ -17,16 +21,33 @@
         @include styleForm($hg-2,$fs-10,$bor-r-2);
         width: 100%;
     }
+    .styleSelect{
+        @include styleForm($hg-3,$fs-10,$bor-r-1);
+        padding: 0 0 0 3em;
+        cursor: pointer;
+        &:hover{
+            color: $color-pink-1;
+        }
+    }
     .form__content{
         position: relative;
     }
     .icon__name,
     .icone__Email,
-    .icone_message{
+    .icone_message,
+    .icon_conE{
         position: absolute;
         left: 1em;
         top: 1em;
         line-height: $lh-2;
         color: $color-pink-1;
+    }
+    .formYourCourse__imgBot{
+        position: absolute;
+        bottom: 0;
+    }
+    .content{
+        position: relative;
+        z-index: 3;
     }
 }

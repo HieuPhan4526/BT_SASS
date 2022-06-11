@@ -4,16 +4,8 @@ header{
     z-index: 100;
     .topBarMenu{
         margin-left: $mg-4;
-        a{
-            display: block;
-            color: $color-black-1;
-            margin-left: $mg-3;
-            transition: all 0.5s;
-            &:hover{
-                color: $color-pink-1;
-                text-decoration: none;
-            }
-        }
+        @include styleIcon($color-black-1,$color-pink-1);
+        margin-left: $mg-3;
     }
     .nav-item{
         padding-right: $pd-6;

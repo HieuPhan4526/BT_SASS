@@ -67,7 +67,7 @@
                 </ul>
 
                 <div class="topBarMenu d-flex align-items-center">
-                    <button class="btn headerBTN">
+                    <button class="btn BTN-Button">
                         <i class="fa-solid fa-phone"></i>
                         <span>(+1) 555 234-8765</span>
                     </button>
@@ -255,7 +255,7 @@
 
     </section>
     <section class="formYourCourse">
-        <div class="container">
+        <div class="container content">
             <div class="row flex-column_gap 20">
                 <div class="col-xl-7">
                     <img class="img-fluid" src="./img/conatct_inner.png" alt="">
@@ -272,7 +272,7 @@
                                 </span>
                                 <span>
                                     <input type="text" class="styleForm" placeholder="name">
-                                    <!-- <span>The field is required.</span>  -->
+                                    <span id="tbName" style="display: none;"></span>
                                 </span>
 
                             </div>
@@ -281,34 +281,142 @@
                                     <i class="fa-solid fa-envelope"></i>
                                 </span>
                                 <input type="email" class="styleForm" placeholder="Email">
-                                <span></span>
+                                <span id="tbEmail" style="display: none;"></span>
                             </div>
 
                         </div>
-                        <div class="form-group">
-                            <select class="custom-select custom-select-lg mb-3">
+                        <div class="form-group form__content">
+                            <span class="icon_conE">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                            <select class="custom-select custom-select-lg mb-3 styleSelect">
                                 <option selected>English</option>
                                 <option>French</option>
                                 <option>Spanish</option>
                                 <option>German</option>
                             </select>
+
                             <div class="form__content">
                                 <span class="icone_message">
                                     <i class="fa-solid fa-message"></i>
                                 </span>
                                 <textarea class="styleMessage" name="your-message" cols="30" rows="10"
-                                    placeholder="Message"></textarea>
+                                    placeholder="Message" aria-invalid="false"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="btButton">
+                            <button type="button" class="btn BTN-Button">Send</button>
+                            <span id="tbText" style="display: none;"></span>
+                        </div>
                     </form>
                 </div>
-
-
             </div>
         </div>
+        <div class="formYourCourse__imgBot">
+            <img class="img-fluid" src="./img/accent_bottom_wave_01.png" alt="">
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h2>Contact us</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <span class="style__span">
+                                Franklin St, Greenpoint Ave
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <span class="style__span">
+                                +2342 5446 67
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                            </span>
+                            <span class="style__span">
+                                Monday - Friday: 8 AM - 5 PM
+                            </span>
+                        </li>
+                        <li class="nav-item nav_icon d-flex">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-3">
+                    <div class="col__content">
+                        <h2>Quick Links</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Courses</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Schedule</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Blog</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col__content">
+                        <h2>About</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Event</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Get Quote</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="content__button">
+                        <h2>Newsletter</h2>
+                        <div class="btn-letter">
+                            <span>
+                                <input type="email" name="your-email" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Your email">
+                            </span>
+                        </div>
+                        <div class="btNewsletterButton">
+                            <input type="submit" value="SUBSCRIBE">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -1,0 +1,92 @@
+footer{
+    background-image: url(../../img/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-white-1;
+    background-color: $color-black-1;
+
+    .container{
+        padding-bottom: $pd-7 ;
+    }
+    .col-3{
+        padding: 0 $pd-10;
+    }
+    h2{
+            @include styleText($fs-8,$color-white-1,$fw-5);
+            margin-bottom: $mg-3 + 1em;
+        }
+    .style__span{
+        font-size: $fs-4;
+        padding-left: $pd-11;
+        line-height: $lh-2 + 0.1;
+    }
+    .nav_icon{
+        margin-top: $mg-3 * 2;
+        a{
+            @include styleIcon($color-white-1,$color-black-1);
+            margin-right: $mg-3;
+        }
+    }
+    .col__content{
+        li{
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            line-height: $lh-2;
+            padding: $pd-11 0;
+            &:first-of-type{
+                padding-top: 0;
+            }
+            a{
+                display: block;
+                @include styleText($fs-4,$color-white-1,$fw-2);
+                transition: all 200ms ease;
+                &:hover{
+                    opacity: 0.8;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .content__button{
+        h2{
+            margin-bottom: $mg-5 +5;
+        }
+        .btn-letter{
+            padding-bottom: $pd-11 - 0.3em;
+            input{
+                border: 1px solid rgba(255,255,255,.1);
+                border-radius: $bor-r-1;
+                background: transparent;
+                height: $hg-3;
+                text-align: center;
+                width: 100%;
+                &:focus{
+                    outline: none;
+                    border: 1px solid $color-white-1;
+                }
+            }
+        }
+        .btNewsletterButton{
+            input{
+                @include styleText($fs-10,$color-black-1,$fw-4);
+                width: 100%;
+                height: $hg-1 + 0.3em;
+                border-radius: $bor-r-1;
+                box-shadow: 0 0 0 3em $color-white-1 inset;
+                background: transparent;
+                border: none;
+                letter-spacing: 1px;
+                transition: all 300ms ease;
+                &:hover{
+                    color: $color-white-1;
+                    box-shadow: 0 0 0 1px $color-white-1 inset;
+                }
+            }
+
+
+        }
+    
+    }
+
+}

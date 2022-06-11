@@ -24,9 +24,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.headerBTN {
+.BTN-Button {
   font-size: 0.9rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
   padding: 1.1em 1.5em;
   margin: 6px;
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
   transition: all 300ms;
 }
 
-.headerBTN:hover {
+.BTN-Button:hover {
   color: #b61984;
   -webkit-box-shadow: 0 0 0 1px #b61984 inset;
           box-shadow: 0 0 0 1px #b61984 inset;
@@ -97,17 +97,14 @@ header {
 
 header .topBarMenu {
   margin-left: 20px;
-}
-
-header .topBarMenu a {
   display: block;
   color: #181818;
-  margin-left: 1em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  margin-left: 1em;
 }
 
-header .topBarMenu a:hover {
+header .topBarMenu:hover {
   color: #b61984;
   text-decoration: none;
 }
@@ -202,7 +199,12 @@ header .active .nav-link:hover::after {
 }
 
 .formYourCourse {
-  padding-top: 2em;
+  padding: 50px 0;
+  position: relative;
+}
+
+.formYourCourse .BTN-Button {
+  padding: 1.5em 50px;
 }
 
 .formYourCourse .formYourCourse__content {
@@ -210,6 +212,8 @@ header .active .nav-link:hover::after {
   border-radius: 10px;
   overflow: hidden;
   padding: 0 25px;
+  -webkit-box-shadow: 0 30px 30px -10px #00000033;
+          box-shadow: 0 30px 30px -10px #00000033;
   width: 100%;
 }
 
@@ -238,17 +242,157 @@ header .active .nav-link:hover::after {
   width: 100%;
 }
 
+.formYourCourse .styleSelect {
+  padding: 1.1em 1.1em 1.1em 3.5em;
+  height: 3.2em;
+  font-size: 0.8em;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0 0 3em;
+  cursor: pointer;
+}
+
+.formYourCourse .styleSelect:hover {
+  color: #b61984;
+}
+
 .formYourCourse .form__content {
   position: relative;
 }
 
 .formYourCourse .icon__name,
 .formYourCourse .icone__Email,
-.formYourCourse .icone_message {
+.formYourCourse .icone_message,
+.formYourCourse .icon_conE {
   position: absolute;
   left: 1em;
   top: 1em;
   line-height: 1;
   color: #b61984;
+}
+
+.formYourCourse .formYourCourse__imgBot {
+  position: absolute;
+  bottom: 0;
+}
+
+.formYourCourse .content {
+  position: relative;
+  z-index: 3;
+}
+
+footer {
+  background-image: url(../../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #181818;
+}
+
+footer .container {
+  padding-bottom: 8em;
+}
+
+footer .col-3 {
+  padding: 0 40px;
+}
+
+footer h2 {
+  font-size: 1.55rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+footer .style__span {
+  font-size: 0.9em;
+  padding-left: 0.8em;
+  line-height: 1.1;
+}
+
+footer .nav_icon {
+  margin-top: 2em;
+}
+
+footer .nav_icon a {
+  display: block;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-right: 1em;
+}
+
+footer .nav_icon a:hover {
+  color: #181818;
+  text-decoration: none;
+}
+
+footer .col__content li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: 0.8em 0;
+}
+
+footer .col__content li:first-of-type {
+  padding-top: 0;
+}
+
+footer .col__content li a {
+  display: block;
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: 400;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+footer .col__content li a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+footer .content__button h2 {
+  margin-bottom: 45px;
+}
+
+footer .content__button .btn-letter {
+  padding-bottom: 0.5em;
+}
+
+footer .content__button .btn-letter input {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  background: transparent;
+  height: 3.2em;
+  text-align: center;
+  width: 100%;
+}
+
+footer .content__button .btn-letter input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+}
+
+footer .content__button .btNewsletterButton input {
+  font-size: 0.8em;
+  color: #181818;
+  font-weight: 600;
+  width: 100%;
+  height: 4em;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0 3em #ffffff inset;
+          box-shadow: 0 0 0 3em #ffffff inset;
+  background: transparent;
+  border: none;
+  letter-spacing: 1px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+footer .content__button .btNewsletterButton input:hover {
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+          box-shadow: 0 0 0 1px #ffffff inset;
 }
 /*# sourceMappingURL=main.css.map */

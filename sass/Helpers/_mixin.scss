@@ -26,3 +26,12 @@
     border-radius: $bor-r;
     border: 1px solid rgba(0,0,0,.1);
 }
+@mixin styleIcon ($color1,$color2){
+    display: block;
+    color: $color1;
+    transition: all 0.5s;
+    &:hover{
+        color: $color2;
+        text-decoration: none;
+    }
+}
