@@ -93,6 +93,7 @@ header {
   position: relative;
   width: 100%;
   z-index: 100;
+  background-color: transparent;
 }
 
 header .topBarMenu {
@@ -170,6 +171,18 @@ header .active .nav-link:hover::after {
           transform: scale(1.5);
 }
 
+@media screen and (max-width: 992px) {
+  header .navbar-collapse {
+    text-align: center;
+  }
+  header .nav-item .nav-link::after {
+    display: none;
+  }
+  header .active .nav-link::after {
+    display: none;
+  }
+}
+
 .tublaCarosel {
   padding-top: 2em;
 }
@@ -224,10 +237,11 @@ header .active .nav-link:hover::after {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  padding: 0 25px;
+  padding: 50px 25px;
   -webkit-box-shadow: 0 30px 30px -10px #00000033;
           box-shadow: 0 30px 30px -10px #00000033;
   width: 100%;
+  margin: 50px 0;
 }
 
 .formYourCourse h4 {
@@ -244,6 +258,15 @@ header .active .nav-link:hover::after {
   font-size: 0.8em;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.formYourCourse .styleForm:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px 0 #0000001a;
+          box-shadow: 0 0 4px 0 #0000001a;
 }
 
 .formYourCourse .styleMessage {
@@ -253,6 +276,15 @@ header .active .nav-link:hover::after {
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.formYourCourse .styleMessage:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px 0 #0000001a;
+          box-shadow: 0 0 4px 0 #0000001a;
 }
 
 .formYourCourse .styleSelect {
@@ -261,12 +293,21 @@ header .active .nav-link:hover::after {
   font-size: 0.8em;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding: 0 0 0 3em;
   cursor: pointer;
 }
 
 .formYourCourse .styleSelect:hover {
   color: #b61984;
+}
+
+.formYourCourse .styleSelect:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px 0 #0000001a;
+          box-shadow: 0 0 4px 0 #0000001a;
 }
 
 .formYourCourse .form__content {
@@ -292,6 +333,7 @@ header .active .nav-link:hover::after {
 .formYourCourse .content {
   position: relative;
   z-index: 3;
+  padding: 50px 0;
 }
 
 footer {
@@ -301,14 +343,16 @@ footer {
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #181818;
+  padding: 50px;
 }
 
 footer .container {
   padding-bottom: 8em;
 }
 
-footer .col-3 {
+footer .footer__style {
   padding: 0 40px;
+  margin: 40px 0;
 }
 
 footer h2 {
@@ -380,10 +424,12 @@ footer .content__button .btn-letter input {
   height: 3.2em;
   text-align: center;
   width: 100%;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 footer .content__button .btn-letter input:focus {
-  outline: none;
   border: 1px solid #ffffff;
 }
 

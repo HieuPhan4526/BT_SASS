@@ -79,5 +79,11 @@ $bor-r-2 : 20px;
 $bg-1 : #dcd1f3;
 $bg-2 : rgba(255, 255, 255, 1);
 
-
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);
 

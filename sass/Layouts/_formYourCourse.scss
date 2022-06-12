@@ -5,9 +5,10 @@
         padding: $pd-3 $pd-1;
     }
     .formYourCourse__content{
-        @include styleContent($bg-2, 0, $pd-6);
+        @include styleContent($bg-2, $pd-1, $pd-6);
         box-shadow: $box-s-3;
         width: 100%;
+        margin: $mg-6 0;
     }
     h4{
         @include styleText($fs-9,$color-black-1,$fw-5);
@@ -16,18 +17,38 @@
     }
     .styleForm{
         @include styleForm($hg-1,$fs-10,$bor-r-1);
+        outline: none;
+        transition: all 0.5s;
+        &:focus{
+            border: 1px solid rgba(0,0,0,.3);
+            box-shadow: 0 0 4px 0 #0000001a;
+        }
+
     }
     .styleMessage{
         @include styleForm($hg-2,$fs-10,$bor-r-2);
         width: 100%;
+        outline: none;
+        transition: all 0.5s;
+        &:focus{
+            border: 1px solid rgba(0,0,0,.3);
+            box-shadow: 0 0 4px 0 #0000001a;
+        }
     }
     .styleSelect{
         @include styleForm($hg-3,$fs-10,$bor-r-1);
+        outline: none;
+        transition: all 0.5s;
         padding: 0 0 0 3em;
         cursor: pointer;
         &:hover{
             color: $color-pink-1;
-        }
+        };
+        &:focus{
+            border: 1px solid rgba(0,0,0,.3);
+            box-shadow: 0 0 4px 0 #0000001a;
+        };
+        
     }
     .form__content{
         position: relative;
@@ -49,5 +70,6 @@
     .content{
         position: relative;
         z-index: 3;
+        padding: $pd-1 0;
     }
 }

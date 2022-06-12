@@ -2,6 +2,7 @@ header{
     position: relative;
     width: 100%;
     z-index: 100;
+    background-color: transparent;
     .topBarMenu{
         margin-left: $mg-4;
         @include styleIcon($color-black-1,$color-pink-1);
@@ -50,5 +51,26 @@ header{
             }
         }
     }
-
 }   
+//? reponsive
+@include responesive("large"){
+    header{
+        .navbar-collapse{
+            text-align: center;
+        }
+        .nav-item{
+            .nav-link{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        .active{
+            .nav-link{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

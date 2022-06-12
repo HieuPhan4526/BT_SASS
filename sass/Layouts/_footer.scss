@@ -5,12 +5,14 @@ footer{
     background-repeat: no-repeat;
     color: $color-white-1;
     background-color: $color-black-1;
+    padding: $pd-1;
 
     .container{
         padding-bottom: $pd-7 ;
     }
-    .col-3{
+    .footer__style{
         padding: 0 $pd-10;
+        margin: $mg-5 0;
     }
     h2{
             @include styleText($fs-8,$color-white-1,$fw-5);
@@ -61,10 +63,11 @@ footer{
                 height: $hg-3;
                 text-align: center;
                 width: 100%;
+                outline: none;
+                transition: all 0.3s;
                 &:focus{
-                    outline: none;
                     border: 1px solid $color-white-1;
-                }
+                };
             }
         }
         .btNewsletterButton{
