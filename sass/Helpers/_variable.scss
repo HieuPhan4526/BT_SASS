@@ -67,12 +67,20 @@ $mg-6 : 50px;
 //box shadow
 $box-s-1 : 0 0 0 3em $color-pink-1 inset;
 $box-s-2 : 0 0 0 1px $color-pink-1 inset;
-$box-s-3: 0 30px 30px -10px #00000033;
+$box-s-3 : 0 30px 30px -10px #00000033;
+$box-s-4 : 0 0 0 3em $color-white-1 inset;
+$box-s-5 : 0 0 0 1px $color-white-1 inset;
+
 
 //border-radius
 $bor-r-1 : 50px;
 $bor-r-2 : 20px;
 
+//border
+
+$br-1 : 1px solid rgba(0,0,0,.1);
+$br-2 : 1px solid rgba(255,255,255,.1);
+$br-3 : 1px solid #fff;
 
 
 //Background color

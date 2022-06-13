@@ -56,40 +56,8 @@ footer{
         }
         .btn-letter{
             padding-bottom: $pd-11 - 0.3em;
-            input{
-                border: 1px solid rgba(255,255,255,.1);
-                border-radius: $bor-r-1;
-                background: transparent;
-                height: $hg-3;
-                text-align: center;
-                width: 100%;
-                outline: none;
-                transition: all 0.3s;
-                &:focus{
-                    border: 1px solid $color-white-1;
-                };
-            }
         }
-        .btNewsletterButton{
-            input{
-                @include styleText($fs-10,$color-black-1,$fw-4);
-                width: 100%;
-                height: $hg-1 + 0.3em;
-                border-radius: $bor-r-1;
-                box-shadow: 0 0 0 3em $color-white-1 inset;
-                background: transparent;
-                border: none;
-                letter-spacing: 1px;
-                transition: all 300ms ease;
-                &:hover{
-                    color: $color-white-1;
-                    box-shadow: 0 0 0 1px $color-white-1 inset;
-                }
-            }
-
-
-        }
-    
+        
     }
 
 }

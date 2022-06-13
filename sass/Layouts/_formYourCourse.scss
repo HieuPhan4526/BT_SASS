@@ -16,7 +16,7 @@
         text-align: center;
     }
     .styleForm{
-        @include styleForm($hg-1,$fs-10,$bor-r-1);
+        @include styleForm($hg-1,$fs-10,$bor-r-1,$br-1);
         outline: none;
         transition: all 0.5s;
         &:focus{
@@ -26,7 +26,7 @@
 
     }
     .styleMessage{
-        @include styleForm($hg-2,$fs-10,$bor-r-2);
+        @include styleForm($hg-1,$fs-10,$bor-r-1,$br-1);
         width: 100%;
         outline: none;
         transition: all 0.5s;
@@ -36,7 +36,7 @@
         }
     }
     .styleSelect{
-        @include styleForm($hg-3,$fs-10,$bor-r-1);
+        @include styleForm($hg-1,$fs-10,$bor-r-1,$br-1);
         outline: none;
         transition: all 0.5s;
         padding: 0 0 0 3em;

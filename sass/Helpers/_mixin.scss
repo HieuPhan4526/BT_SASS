@@ -19,12 +19,12 @@
     overflow: hidden;
     padding: $py $px;
 }
-@mixin styleForm ($hg,$fs,$bor-r){
+@mixin styleForm ($hg,$fs,$bor-r,$br){
     padding: $pd-2 $pd-2 $pd-2 $pd-9;
     height: $hg;
     font-size: $fs;
     border-radius: $bor-r;
-    border: 1px solid rgba(0,0,0,.1);
+    border: $br;
 }
 @mixin styleIcon ($color1,$color2){
     display: block;

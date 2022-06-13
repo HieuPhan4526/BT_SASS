@@ -1,0 +1,31 @@
+.styleInput_footer{
+    @include styleForm($hg-3,$fs-10,$bor-r-1,$br-2);
+    padding: $pd-2;
+    color: white;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s;
+    &:focus{
+        border: $br-3;
+    }
+}
+
+.styleInput_footerWhite{
+    @include styleForm($hg-1+0.3em,$fs-10,$bor-r-1,none);
+    padding: 0;
+    @include styleText($fs-10,$color-black-1,$fw-4);
+    background: transparent;
+    line-height: $lh-5;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    letter-spacing: 1px;
+    box-shadow: $box-s-4;
+    transition: all 0.3s ease;
+    &:hover{
+        color: $color-white-1;
+        box-shadow: $box-s-5;
+    }
+}

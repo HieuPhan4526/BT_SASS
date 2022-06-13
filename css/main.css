@@ -89,6 +89,54 @@ h1, h2, h3, h4, h5 {
           box-shadow: 0 30px 30px -10px #00000033;
 }
 
+.styleInput_footer {
+  padding: 1.1em 1.1em 1.1em 3.5em;
+  height: 3.2em;
+  font-size: 0.8em;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.1em;
+  color: white;
+  background: transparent;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.styleInput_footer:focus {
+  border: 1px solid #fff;
+}
+
+.styleInput_footerWhite {
+  padding: 1.1em 1.1em 1.1em 3.5em;
+  height: 4em;
+  font-size: 0.8em;
+  border-radius: 50px;
+  border: none;
+  padding: 0;
+  font-size: 0.8em;
+  color: #181818;
+  font-weight: 600;
+  background: transparent;
+  line-height: 3.1em;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 0 0 3em #ffffff inset;
+          box-shadow: 0 0 0 3em #ffffff inset;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.styleInput_footerWhite:hover {
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
+          box-shadow: 0 0 0 1px #ffffff inset;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -271,9 +319,9 @@ header .active .nav-link:hover::after {
 
 .formYourCourse .styleMessage {
   padding: 1.1em 1.1em 1.1em 3.5em;
-  height: 90px;
+  height: 3.7em;
   font-size: 0.8em;
-  border-radius: 20px;
+  border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   outline: none;
@@ -289,7 +337,7 @@ header .active .nav-link:hover::after {
 
 .formYourCourse .styleSelect {
   padding: 1.1em 1.1em 1.1em 3.5em;
-  height: 3.2em;
+  height: 3.7em;
   font-size: 0.8em;
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -415,43 +463,5 @@ footer .content__button h2 {
 
 footer .content__button .btn-letter {
   padding-bottom: 0.5em;
-}
-
-footer .content__button .btn-letter input {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  background: transparent;
-  height: 3.2em;
-  text-align: center;
-  width: 100%;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-footer .content__button .btn-letter input:focus {
-  border: 1px solid #ffffff;
-}
-
-footer .content__button .btNewsletterButton input {
-  font-size: 0.8em;
-  color: #181818;
-  font-weight: 600;
-  width: 100%;
-  height: 4em;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 0 3em #ffffff inset;
-          box-shadow: 0 0 0 3em #ffffff inset;
-  background: transparent;
-  border: none;
-  letter-spacing: 1px;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-footer .content__button .btNewsletterButton input:hover {
-  color: #ffffff;
-  -webkit-box-shadow: 0 0 0 1px #ffffff inset;
-          box-shadow: 0 0 0 1px #ffffff inset;
 }
 /*# sourceMappingURL=main.css.map */
